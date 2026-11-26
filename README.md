@@ -14,10 +14,10 @@ npx skills add Sabadzma/product-design-skills --skill '*'
 
 | Skill | When to use it |
 | --- | --- |
-| [scaffold-ux-docs](scaffold-ux-docs/SKILL.md) | Start a new project with a documentation guide, an empty product overview, and a glossary to fill in later. |
-| [ux-docs](ux-docs/SKILL.md) | Turn existing designs, project materials, and agreed decisions into a first set of UX docs. If docs already exist, the agent follows the update workflow. |
-| [update-ux-docs](update-ux-docs/SKILL.md) | Capture decisions and scenarios from a conversation, then update the affected features and references. |
-| [explore-ux-scenarios](explore-ux-scenarios/SKILL.md) | Ask explicitly for situations to consider when reviewing a feature, flow, or screen. The skill returns a list in chat and saves scenarios when asked. |
+| [scaffold-ux-docs](skills/scaffold-ux-docs/SKILL.md) | Start a new project with a documentation guide, an empty product overview, and a glossary to fill in later. |
+| [ux-docs](skills/ux-docs/SKILL.md) | Turn existing designs, project materials, and agreed decisions into a first set of UX docs. If docs already exist, the agent follows the update workflow. |
+| [update-ux-docs](skills/update-ux-docs/SKILL.md) | Capture decisions and scenarios from a conversation, then update the affected features and references. |
+| [explore-ux-scenarios](skills/explore-ux-scenarios/SKILL.md) | Ask explicitly for situations to consider when reviewing a feature, flow, or screen. The skill returns a list in chat and saves scenarios when asked. |
 
 ## Example workflow
 
@@ -29,7 +29,7 @@ After designing a page list with your agent, you could ask:
 
 The resulting `ux-docs/` folder has a product overview and glossary. Each documented feature has a README and can include a `decisions.md` for agreed behavior and a `scenarios.md` for situations worth reviewing. A scenario can be recorded before the team chooses a response.
 
-See the [Benchbook example](ux-docs/references/examples/benchbook/ux-docs/README.md) for a complete set of sample docs.
+See the [Benchbook example](skills/ux-docs/references/examples/benchbook/ux-docs/README.md) for a complete set of sample docs.
 
 ## Releasing changes
 

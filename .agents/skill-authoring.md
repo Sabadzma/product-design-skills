@@ -21,7 +21,7 @@ Maintain the four skills as a set. When changing one, check which other workflow
 
 For a skill the user wants to invoke manually, state that requirement in both its description and instructions. The Agent Skills specification has no shared setting that enforces it. Use the target harness's invocation policy when it provides one.
 
-To keep unused skills out of the session context across harnesses, store the skill folders outside automatic discovery paths. When you want to use a skill, ask the agent to read and use its `SKILL.md` and give it access to the whole folder. For example, ask it to use `scaffold-ux-docs/SKILL.md`.
+To keep unused skills out of the session context across harnesses, store the skill folders outside automatic discovery paths. When you want to use a skill, ask the agent to read and use its `SKILL.md` and give it access to the whole folder. For example, ask it to use `skills/scaffold-ux-docs/SKILL.md`.
 
 If you prefer native invocation in a particular harness, use its manual-only configuration.
 
