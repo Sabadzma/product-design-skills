@@ -1,0 +1,29 @@
+name: Release skills
+on:
+  push:
+    branches: [main]
+
+concurrency: release-skills
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - uses: changesets/action@v1
+        with:
+          version: npm run version:skills
+          publish: npx changeset tag
+          title: "chore: version skills"
+          commit: "chore: version skills"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,5 @@
+{
+  "baseBranch": "main",
+  "changelog": "@changesets/cli/changelog",
+  "privatePackages": { "version": true, "tag": true }
+}
