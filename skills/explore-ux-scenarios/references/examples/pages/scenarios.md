@@ -1,12 +1,18 @@
 # Pages scenarios
 
-## Browse pages
+## Empty states
 
-- An editor opens a branch before anyone has created its first page.
-- The branch contains pages, but the current search hides every row.
-- The editor switches to French while the English page list is still loading.
+- This branch has no pages.
+- No pages match the active filters.
 
-## Create a page
+## Loading and pending states
 
-- Another editor claims the same URL between the availability check and submission.
-- The connection drops after the editor submits the form and before they see a confirmation.
+- The page titles have loaded while translation counts are still pending. The editor applies a filter that depends on those counts.
+
+## Error and recovery states
+
+- The connection drops during a page save, and the editor cannot tell whether the changes were saved.
+
+## Edge cases
+
+- Another editor claims the same URL after the availability check passes but before the page is created.

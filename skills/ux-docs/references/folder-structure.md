@@ -46,9 +46,9 @@ During maintenance, add or revise the relevant part when a source establishes a 
 
 ## Feature scenarios
 
-Create `scenarios.md` when there are situations to keep. Link it from the feature README. Write one bullet per distinct situation and group by activity when helpful. A bullet can describe a state on its own. When a confirmed rule applies, link to its decision heading. Reserve open questions for specific decisions that need an answer.
+Initial UX documentation covers known behavior in the feature docs. Scenario discovery belongs to an explicitly requested `explore-ux-scenarios` pass. Save explored scenarios when requested. During a direct update, `update-ux-docs` may also record concrete situations the user raised or selected for design review.
 
-During initial documentation or a handoff, capture situations explicitly raised by the user, selected for review, or identified in the source materials. Leave speculative solutions and discarded suggestions out. The user can explicitly request `explore-ux-scenarios` for a separate discovery pass.
+Link a saved list from the feature README. Use only categories with entries. Empty states briefly name what is absent. Error and recovery states briefly name what failed and its consequence. Loading and pending states describe what happens while an outcome is pending. Edge cases describe interacting conditions or events. Use one bullet per situation. A relevant confirmed decision can be linked using a relative path.
 
 ## Decision format
 

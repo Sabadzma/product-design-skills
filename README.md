@@ -16,7 +16,7 @@ npx skills add Sabadzma/product-design-skills --skill '*'
 | --- | --- |
 | [scaffold-ux-docs](skills/scaffold-ux-docs/SKILL.md) | Start a new project with a documentation guide, an empty product overview, and a glossary to fill in later. |
 | [ux-docs](skills/ux-docs/SKILL.md) | Turn existing designs, project materials, and agreed decisions into a first set of UX docs. If docs already exist, the agent follows the update workflow. |
-| [update-ux-docs](skills/update-ux-docs/SKILL.md) | Capture decisions and scenarios from a conversation, then update the affected features and references. |
+| [update-ux-docs](skills/update-ux-docs/SKILL.md) | Capture decisions and concrete scenarios the user raised or selected in a conversation, then update the affected features and references. |
 | [explore-ux-scenarios](skills/explore-ux-scenarios/SKILL.md) | Ask explicitly for situations to consider when reviewing a feature, flow, or screen. The skill returns a list in chat and saves scenarios when asked. |
 
 ## Example workflow
@@ -27,7 +27,7 @@ After designing a page list with your agent, you could ask:
 2. “Use `explore-ux-scenarios` to list situations we should consider when someone filters the page list.”
 3. “Use `update-ux-docs` to record our decision: when filters hide every page, keep the active filters visible and offer Clear filters.”
 
-The resulting `ux-docs/` folder has a product overview and glossary. Each documented feature has a README and can include a `decisions.md` for agreed behavior and a `scenarios.md` for situations worth reviewing. A scenario can be recorded before the team chooses a response.
+The resulting `ux-docs/` folder has a product overview and glossary. Each documented feature has a README and can include a `decisions.md` for agreed behavior and a `scenarios.md` for situations worth reviewing. Initial documentation skips scenario files. Explicitly run `explore-ux-scenarios` to discover situations a design might miss, then ask to save the ones worth reviewing.
 
 See the [Benchbook example](skills/ux-docs/references/examples/benchbook/ux-docs/README.md) for a complete set of sample docs.
 
